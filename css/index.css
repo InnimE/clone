@@ -3,7 +3,7 @@
 header {
     width: 100%;
     height: 80px;
-    padding:0px 5% 0px 5%;
+    padding: 0px 5% 0px 5%;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -71,13 +71,13 @@ span {
 }
 
 main div {
-    font-size:50px;
+    font-size: 50px;
 }
 
 
 .page01 {
-    height:100vh;
-    display:flex;
+    height: 100vh;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -116,7 +116,7 @@ video {
 }
 
 .page02 {
-    height:100vh;
+    height: 100vh;
     background-color: #f2f6fd;
     text-align: center;
     display: flex;
@@ -132,14 +132,14 @@ video {
 }
 
 .page03 {
-    height:100vh;
+    height: 100vh;
     background-color: #fff;
     padding: 200px 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items:center;
-    overflow:hidden;
+    align-items: center;
+    overflow: hidden;
 }
 
 .page03 span {
@@ -161,53 +161,53 @@ video {
 }
 
 .page04 {
-    height:100vh;
+    height: 100vh;
     background-color: #fff;
     padding: 200px 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items:center;
-    overflow:hidden;
+    align-items: center;
+    overflow: hidden;
 }
 
 .page04 span {
     font-size: 40px;
 }
 
-.page04 div ul{
-    width:250px;
-    height:250px;
+.page04 div ul {
+    width: 250px;
+    height: 250px;
     border-radius: 50px;
     background-color: #f1f1f3;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.page04 img{
-    width:150px;
-    height:150px;
+.page04 img {
+    width: 150px;
+    height: 150px;
 }
 
-.page04 div p{
-    font-size:30px;
+.page04 div p {
+    font-size: 30px;
     text-align: center;
 }
 
 .page05 {
-    height:100vh;
+    height: 100vh;
     background-color: #0090f6;
     padding: 200px 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items:center;
-    overflow:hidden;
+    align-items: center;
+    overflow: hidden;
 }
 
 .page05 p {
-    color:#fff;
+    color: #fff;
 
 }
 
@@ -215,38 +215,38 @@ video {
     font-size: 40px;
 }
 
-.page05 div{
-    width:340px;
-    height:650px;
-    background-image:url("../img/배경.png");
+.page05 div {
+    width: 340px;
+    height: 650px;
+    background-image: url("../img/배경.png");
     background-size: 340px 650px;
 }
 
-.page05 div ul{
+.page05 div ul {
     margin-top: 50px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.page05 img{
-    width:254px;
-    height:550px;
+.page05 img {
+    width: 254px;
+    height: 550px;
 }
 
 .page06 {
-    height:100vh;
+    height: 100vh;
     background-color: #0090f6;
     padding: 200px 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items:center;
-    overflow:hidden;
+    align-items: center;
+    overflow: hidden;
 }
 
 .page06 p {
-    color:#fff;
+    color: #fff;
 
 }
 
@@ -255,14 +255,19 @@ video {
 }
 
 .page07 {
-    height:100vh;
+    height: 100vh;
     background-color: #0090f6;
     padding: 200px 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items:center;
-    overflow:hidden;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page07 p {
+    color: #fff;
+
 }
 
 .page07 span {
@@ -270,74 +275,63 @@ video {
 }
 
 .mission {
-    width:436px;
-    height:470px;
+    width: 436px;
+    height: 470px;
+    margin: 10px;
     background-color: #fff;
     border-radius: 50px;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .mission p:nth-child(1) {
-    font-size:30px;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 16px;
 }
 
 .mission p:nth-child(2) {
-    font-size:20px;
+    font-size: 20px;
     text-align: center;
-    color:blue;
+    color: blue;
     margin-bottom: 19px;
 }
 
 .mission img {
-    width:320px;
-    height:160px;
+    width: 320px;
+    height: 160px;
 }
 
 .jelly {
     background-color: blue;
-    width:214px;
-    height:80px;
-    display:flex;
-    justify-content:center;
+    width: 214px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
     align-items: center;
     border-radius: 90px;
 }
 
-.jelly img{
-    width:41px;
-    height:41px;
+.jelly img {
+    width: 41px;
+    height: 41px;
 }
 
 .jelly span {
     font-size: 24px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .page08 {
-    height:100vh;
+    height: 100vh;
     background-color: #fff;
     padding: 200px 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items:center;
-    overflow:hidden;
+    align-items: center;
+    overflow: hidden;
 }
 
 .page08 span {
@@ -345,14 +339,14 @@ video {
 }
 
 .page09 {
-    height:100vh;
+    height: 100vh;
     background-color: #fff;
     padding: 200px 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items:center;
-    overflow:hidden;
+    align-items: center;
+    overflow: hidden;
 }
 
 .page09 span {
@@ -361,60 +355,50 @@ video {
 
 
 .page10 {
-    height:100vh;
+    height: 100vh;
     background-color: #fff;
     padding: 200px 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items:flex-start;
-    overflow:hidden;
+    align-items: flex-start;
+    overflow: hidden;
 }
 
 .btn10 {
-    margin-top:72px;
+    margin-top: 72px;
 
 
 }
 
-.btn10 span{
-    color:#000;
+.btn10 span {
+    color: #000;
     font-size: 24px;
 }
 
 .button10 {
-    width:226px;
-    height:94px;
+    width: 226px;
+    height: 94px;
     border: 2px solid #f1f2f3;
-    border-radius:20px;
+    border-radius: 20px;
 }
 
 .button10 img {
-    width:38px;
-    height:38px;
+    width: 38px;
+    height: 38px;
 }
 
 .google {
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 .apple {
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-
 
 footer {
     background-color: rgb(216, 216, 216);
@@ -482,4 +466,492 @@ footer div {
     width: 100px;
     height: 35px;
     background-size: contain;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////// */
+
+@media(max-width:768px){
+header {
+    height: 54px;
+
+}
+
+.monimo {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+header nav a{
+    border-bottom: 1px solid #000;
+    padding:5%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header nav {
+    font-size: 16px;
+    position:fixed;
+    left:0; top:0;
+    background-color: #fff;
+    width:100%; height:100%;
+    transform: translateY(-100%);
+    transition:1s;
+}
+
+header nav.active{
+    transform:translateY(5%);
+}
+
+span {
+    color: #fff;
+}
+
+.trigger-menu {
+    width: 30px;
+    height: 16px;
+    position: relative;
+    background: none;
+    border: none;
+    display: block;
+}
+
+.trigger-menu>span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: 1s;
+}
+
+.trigger-menu>span:nth-child(1) {
+    top: 0;
+}
+
+.trigger-menu>span:nth-child(2) {
+    top: 50%;
+}
+
+.trigger-menu>span:nth-child(3) {
+    top: 100%;
+}
+
+.trigger-menu.active>span:nth-child(1) {
+    top: 50%;
+    transform: rotate(315deg);
+}
+
+.trigger-menu.active>span:nth-child(2) {
+    top: 50%;
+    opacity: 0;
+}
+
+.trigger-menu.active>span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-315deg)
+}
+
+
+
+main div {
+    font-size: 50px;
+}
+
+
+.page01 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item {
+    padding-top: 20%;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.ahdlsms {
+    font-size: 50px;
+}
+
+.monimoni {
+    font-size: 60px;
+    margin-top: 30px;
+}
+
+.download {
+    margin-top: 100px;
+    height: 78px;
+    padding: 0 50px;
+    border: 0px;
+    border-radius: 40px;
+    background: #0068ff;
+    font-size: 24px;
+}
+
+video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.page02 {
+    height: 100vh;
+    background-color: #f2f6fd;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 24px;
+}
+
+.page02 p {
+    padding-top: 60px;
+    font-size: 50px;
+}
+
+.page03 {
+    height: 100vh;
+    background-color: #fff;
+    padding: 200px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page03 span {
+    font-size: 40px;
+}
+
+.slider {
+    gap: 20px;
+    width: 33%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.slider li img {
+    width: 342px;
+    height: 360px;
+    border: 0px;
+    border-radius: 50px;
+}
+
+.page04 {
+    height: 100vh;
+    background-color: #fff;
+    padding: 200px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page04 span {
+    font-size: 40px;
+}
+
+.page04 div ul {
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+    background-color: #f1f1f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page04 img {
+    width: 150px;
+    height: 150px;
+}
+
+.page04 div p {
+    font-size: 30px;
+    text-align: center;
+}
+
+.page05 {
+    height: 100vh;
+    background-color: #0090f6;
+    padding: 200px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page05 p {
+    color: #fff;
+
+}
+
+.page05 span {
+    font-size: 40px;
+}
+
+.page05 div {
+    width: 340px;
+    height: 650px;
+    background-image: url("../img/배경.png");
+    background-size: 340px 650px;
+}
+
+.page05 div ul {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page05 img {
+    width: 254px;
+    height: 550px;
+}
+
+.page06 {
+    height: 100vh;
+    background-color: #0090f6;
+    padding: 200px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page06 p {
+    color: #fff;
+
+}
+
+.page06 span {
+    font-size: 40px;
+}
+
+.page07 {
+    height: 100vh;
+    background-color: #0090f6;
+    padding: 200px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page07 p {
+    color: #fff;
+
+}
+
+.page07 span {
+    font-size: 40px;
+}
+
+.mission {
+    width: 436px;
+    height: 470px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission p:nth-child(1) {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.mission p:nth-child(2) {
+    font-size: 20px;
+    text-align: center;
+    color: blue;
+    margin-bottom: 19px;
+}
+
+.mission img {
+    width: 320px;
+    height: 160px;
+}
+
+.jelly {
+    background-color: blue;
+    width: 214px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 90px;
+}
+
+.jelly img {
+    width: 41px;
+    height: 41px;
+}
+
+.jelly span {
+    font-size: 24px;
+}
+
+.page08 {
+    height: 100vh;
+    background-color: #fff;
+    padding: 200px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page08 span {
+    font-size: 40px;
+}
+
+.page09 {
+    height: 100vh;
+    background-color: #fff;
+    padding: 200px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page09 span {
+    font-size: 40px;
+}
+
+
+.page10 {
+    height: 100vh;
+    background-color: #fff;
+    padding: 200px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.btn10 {
+    margin-top: 72px;
+
+
+}
+
+.btn10 span {
+    color: #000;
+    font-size: 24px;
+}
+
+.button10 {
+    width: 226px;
+    height: 94px;
+    border: 2px solid #f1f2f3;
+    border-radius: 20px;
+}
+
+.button10 img {
+    width: 38px;
+    height: 38px;
+}
+
+.google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: rgb(216, 216, 216);
+    padding: 50px 0px 92px;
+    position: relative;
+}
+
+footer div {
+    padding: 0 24px;
+    font-size: 13px;
+}
+
+.footermenu li a:nth-child(2) {
+    padding-left: 20px;
+}
+
+.footercall {
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.footercall span {
+    padding-left: 15px;
+    color: #000;
+}
+
+.footerinfo {
+    margin-top: 30px;
+}
+
+.footerinfo div {
+    padding: 0px;
+}
+
+.footerinfo div:nth-child(1) {
+    display: flex;
+}
+
+.footerinfo div:nth-child(2) {
+    display: flex;
+}
+
+.footerinfo li {
+    padding: 5px 11px 5px 0px;
+    margin: 0px 10px 0px 0px;
+}
+
+.footercopy {
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.footercopy span {
+    color: #000;
+}
+
+.footercopy span:nth-child(1) {
+    margin: 0px 15px 0px 0px;
+}
+
+.logo img {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    width: 100px;
+    height: 35px;
+    background-size: contain;
+}
+
 }
