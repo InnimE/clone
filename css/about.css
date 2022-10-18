@@ -1,0 +1,225 @@
+@import url(./common.css);
+
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    padding:0px 5% 0px 5%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+
+.monimo {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+header nav {
+    display: block;
+    font-size: 16px;
+}
+
+.trigger-menu {
+    width: 30px;
+    height: 16px;
+    position: relative;
+    background: none;
+    border: none;
+    display: none;
+}
+
+.trigger-menu>span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: 1s;
+}
+
+.trigger-menu>span:nth-child(1) {
+    top: 0;
+}
+
+.trigger-menu>span:nth-child(2) {
+    top: 50%;
+}
+
+.trigger-menu>span:nth-child(3) {
+    top: 100%;
+}
+
+.trigger-menu.active>span:nth-child(1) {
+    top: 50%;
+    transform: rotate(315deg);
+}
+
+.trigger-menu.active>span:nth-child(2) {
+    top: 50%;
+    opacity: 0;
+}
+
+.trigger-menu.active>span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-315deg)
+}
+
+.thro {
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('/html\(me\)/1/img/intro.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.rmadbd {
+    color: #fff;
+    font-size: 30px;
+    margin-top: 150px;
+}
+
+.tkatjd {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.text01 {
+    padding-top: 240px;
+    overflow: hidden;
+}
+
+.text01 li img {
+    width: 200px;
+    height: 200px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.text1-1 {
+    font-size: 25px;
+    text-align: center;
+    padding: 0 24px;
+}
+
+
+.moving {
+    gap: 20px;
+    width: 50%;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    animation: bannermove;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes bannermove {
+    0% {
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-362%);
+    }
+}
+
+
+.aaaa {
+    padding: 320px 0px 200px;
+    text-align: center;
+}
+
+.aaaa li img {
+    width: 140px;
+    height: 150px;
+    margin: 30px;
+}
+
+.aaaa p {
+    font-size: 30px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(216, 216, 216);
+    padding: 50px 0px 92px;
+    position: relative;
+}
+
+footer div {
+    padding: 0 24px;
+    font-size: 13px;
+}
+
+.footermenu li a:nth-child(2) {
+    padding-left: 20px;
+}
+
+.footercall {
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.footercall span {
+    padding-left: 15px;
+    color: #000;
+}
+
+.footerinfo {
+    margin-top: 30px;
+}
+
+.footerinfo div {
+    padding: 0px;
+}
+
+.footerinfo div:nth-child(1) {
+    display: flex;
+}
+
+.footerinfo div:nth-child(2) {
+    display: flex;
+}
+
+.footerinfo li {
+    padding: 5px 11px 5px 0px;
+    margin: 0px 10px 0px 0px;
+}
+
+.footercopy {
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.footercopy span {
+    color: #000;
+}
+
+.footercopy span:nth-child(1) {
+    margin: 0px 15px 0px 0px;
+}
+
+.logo img {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    width: 100px;
+    height: 35px;
+    background-size: contain;
+}
