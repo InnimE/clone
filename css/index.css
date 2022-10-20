@@ -9,6 +9,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 1;
 }
 
 .monimo {
@@ -34,42 +35,6 @@ span {
     display: none;
 }
 
-.trigger-menu>span {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #000;
-    transition: 1s;
-}
-
-.trigger-menu>span:nth-child(1) {
-    top: 0;
-}
-
-.trigger-menu>span:nth-child(2) {
-    top: 50%;
-}
-
-.trigger-menu>span:nth-child(3) {
-    top: 100%;
-}
-
-.trigger-menu.active>span:nth-child(1) {
-    top: 50%;
-    transform: rotate(315deg);
-}
-
-.trigger-menu.active>span:nth-child(2) {
-    top: 50%;
-    opacity: 0;
-}
-
-.trigger-menu.active>span:nth-child(3) {
-    top: 50%;
-    transform: rotate(-315deg)
-}
-
 main div {
     font-size: 50px;
 }
@@ -77,20 +42,26 @@ main div {
 
 .page01 {
     height: 100vh;
+    position:relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .item {
-    padding-top: 20%;
     width: 100%;
+    height:100%;
     text-align: center;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* background-image:url(/1/img/web_top_coin.mp4); */
 }
 
 .ahdlsms {
+    margin-top:80px;
     font-size: 50px;
 }
 
@@ -109,11 +80,12 @@ main div {
     font-size: 24px;
 }
 
-video {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.page01 .video01 {
+    position:absolute;
+    bottom:0;
+    z-index: -1;
 }
+
 
 .page02 {
     height: 100vh;
@@ -123,7 +95,6 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 200px 24px;
 }
 
 .page02 p {
@@ -196,7 +167,8 @@ video {
 }
 
 .page05 {
-    height: 100vh;
+    width:100%;
+    height:100vh;
     background-color: #0090f6;
     padding: 200px 24px;
     display: flex;
@@ -216,17 +188,16 @@ video {
 }
 
 .page05 div {
-    width: 340px;
     height: 650px;
     background-image: url("../img/배경.png");
+    background-repeat: no-repeat;
     background-size: 340px 650px;
+    padding-right: 5%;
 }
 
-.page05 div ul {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.page05 div ul img{
+    width:260px;
+    margin:50px 0 0 40px;
 }
 
 .page05 img {
@@ -338,22 +309,6 @@ video {
     font-size: 40px;
 }
 
-.page09 {
-    height: 100vh;
-    background-color: #fff;
-    padding: 200px 24px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
-}
-
-.page09 span {
-    font-size: 40px;
-}
-
-
 .page10 {
     height: 100vh;
     background-color: #fff;
@@ -367,8 +322,6 @@ video {
 
 .btn10 {
     margin-top: 72px;
-
-
 }
 
 .btn10 span {
@@ -475,31 +428,27 @@ footer div {
 /* ////////////////////////////////////////////////////////////////////// */
 
 @media(max-width:768px){
+    
 header {
     height: 54px;
-
-}
-
-.monimo {
-    margin-left: 10px;
-    font-size: 30px;
+    z-index: 1;
 }
 
 header nav a{
-    border-bottom: 1px solid #000;
     padding:5%;
     display: flex;
     justify-content: flex-start;
+    border-bottom: 1px solid #000;
 }
 
 header nav {
-    font-size: 16px;
+    font-size: 15px;
     position:fixed;
     left:0; top:0;
     background-color: #fff;
     width:100%; height:100%;
     transform: translateY(-100%);
-    transition:1s;
+    transition:.5s;
 }
 
 header nav.active{
@@ -514,8 +463,6 @@ span {
     width: 30px;
     height: 16px;
     position: relative;
-    background: none;
-    border: none;
     display: block;
 }
 
@@ -525,7 +472,7 @@ span {
     width: 100%;
     height: 2px;
     background-color: #000;
-    transition: 1s;
+    transition: .5s;
 }
 
 .trigger-menu>span:nth-child(1) {
@@ -542,7 +489,7 @@ span {
 
 .trigger-menu.active>span:nth-child(1) {
     top: 50%;
-    transform: rotate(315deg);
+    transform: rotate(135deg);
 }
 
 .trigger-menu.active>span:nth-child(2) {
@@ -552,10 +499,8 @@ span {
 
 .trigger-menu.active>span:nth-child(3) {
     top: 50%;
-    transform: rotate(-315deg)
+    transform: rotate(-135deg);
 }
-
-
 
 main div {
     font-size: 50px;
@@ -565,41 +510,50 @@ main div {
 .page01 {
     height: 100vh;
     display: flex;
+    position:relative;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .item {
-    padding-top: 20%;
     width: 100%;
+    height:100%;
     text-align: center;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* background-image:url(/1/img/web_top_coin.mp4); */
 }
 
 .ahdlsms {
-    font-size: 50px;
+    margin-top:80px;
+    font-size: 24px;
 }
 
 .monimoni {
     font-size: 60px;
-    margin-top: 30px;
+    margin-top:0px;
+    margin-bottom: 300px;
 }
 
 .download {
+    width:90%;
     margin-top: 100px;
     height: 78px;
     padding: 0 50px;
     border: 0px;
-    border-radius: 40px;
+    border-radius: 20px;
     background: #0068ff;
     font-size: 24px;
 }
 
-video {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.page01 .video01 {
+    bottom:0;
+    z-index: -1;
 }
+
 
 .page02 {
     height: 100vh;
@@ -609,12 +563,17 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 200px 24px;
+}
+
+.page02 img {
+    width:200px;
+    height:200px;
 }
 
 .page02 p {
     padding-top: 60px;
-    font-size: 50px;
+    font-size:30px;
+    text-align: center;
 }
 
 .page03 {
@@ -622,14 +581,22 @@ video {
     background-color: #fff;
     padding: 200px 24px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     overflow: hidden;
 }
 
+.page03 p {
+    font-size:30px;
+    text-align: center;
+}
+
+.page03 span:nth-child(1) {
+    font-size: 17px;
+}
+
 .page03 span {
-    font-size: 40px;
+    font-size:30px;
 }
 
 .slider {
@@ -640,8 +607,8 @@ video {
 }
 
 .slider li img {
-    width: 342px;
-    height: 360px;
+    width: 171px;
+    height: 180px;
     border: 0px;
     border-radius: 50px;
 }
@@ -651,20 +618,24 @@ video {
     background-color: #fff;
     padding: 200px 24px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     overflow: hidden;
 }
 
+.page04 p {
+    font-size:30px;
+    text-align: center;
+}
+
 .page04 span {
-    font-size: 40px;
+    font-size: 17px;
 }
 
 .page04 div ul {
-    width: 250px;
-    height: 250px;
-    border-radius: 50px;
+    width: 125px;
+    height: 125px;
+    border-radius: 25px;
     background-color: #f1f1f3;
     display: flex;
     justify-content: center;
@@ -672,47 +643,50 @@ video {
 }
 
 .page04 img {
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
 }
 
 .page04 div p {
-    font-size: 30px;
+    font-size: 17px;
     text-align: center;
 }
 
 .page05 {
-    height: 100vh;
+    width:100%;
+    height:100vh;
     background-color: #0090f6;
     padding: 200px 24px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     overflow: hidden;
 }
 
 .page05 p {
     color: #fff;
+    font-size:30px;
+    text-align: center;
 
 }
 
 .page05 span {
-    font-size: 40px;
+    font-size: 17px;
 }
 
 .page05 div {
-    width: 340px;
-    height: 650px;
+    height: 325px;
     background-image: url("../img/배경.png");
-    background-size: 340px 650px;
+    background-repeat: no-repeat;
+    background-size: 170px 325px;
+    padding-right: 5%;
+    padding-bottom: 5%;
 }
 
-.page05 div ul {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.page05 div ul img{
+    width:135px;
+    height:270px;
+    margin:30px 0 0 17px;
 }
 
 .page05 img {
@@ -725,19 +699,23 @@ video {
     background-color: #0090f6;
     padding: 200px 24px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     overflow: hidden;
 }
 
 .page06 p {
     color: #fff;
-
+    font-size:30px;
+    text-align: center;
 }
 
 .page06 span {
-    font-size: 40px;
+    font-size: 17px;
+}
+
+.page06 img {
+    height:600px;
 }
 
 .page07 {
@@ -745,27 +723,27 @@ video {
     background-color: #0090f6;
     padding: 200px 24px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     overflow: hidden;
 }
 
 .page07 p {
     color: #fff;
-
+    font-size:30px;
+    text-align: center;
 }
 
 .page07 span {
-    font-size: 40px;
+    font-size: 17px;
 }
 
 .mission {
-    width: 436px;
-    height: 470px;
+    width: 218px;
+    height: 235px;
     margin: 10px;
     background-color: #fff;
-    border-radius: 50px;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -773,40 +751,41 @@ video {
 }
 
 .mission p:nth-child(1) {
-    font-size: 30px;
+    color:#000;
+    font-size: 15px;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .mission p:nth-child(2) {
-    font-size: 20px;
+    font-size: 10px;
     text-align: center;
     color: blue;
-    margin-bottom: 19px;
+    margin-bottom: 9px;
 }
 
 .mission img {
-    width: 320px;
-    height: 160px;
+    width: 160px;
+    height: 80px;
 }
 
 .jelly {
     background-color: blue;
-    width: 214px;
-    height: 80px;
+    width: 107px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 90px;
+    border-radius: 45px;
 }
 
 .jelly img {
-    width: 41px;
-    height: 41px;
+    width: 20px;
+    height: 20px;
 }
 
 .jelly span {
-    font-size: 24px;
+    font-size: 12px;
 }
 
 .page08 {
@@ -814,31 +793,19 @@ video {
     background-color: #fff;
     padding: 200px 24px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     overflow: hidden;
+}
+
+.page08 p {
+    font-size:30px;
+    text-align: center;
 }
 
 .page08 span {
-    font-size: 40px;
+    font-size: 17px;
 }
-
-.page09 {
-    height: 100vh;
-    background-color: #fff;
-    padding: 200px 24px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
-}
-
-.page09 span {
-    font-size: 40px;
-}
-
 
 .page10 {
     height: 100vh;
@@ -851,27 +818,36 @@ video {
     overflow: hidden;
 }
 
-.btn10 {
-    margin-top: 72px;
-
-
+.video02 {
+    width:205px;
+    height:235px;
 }
+
+.page10 p {
+    font-size:30px;
+    text-align: left;
+}
+
+.btn10 {
+    margin:0;
+}
+
 
 .btn10 span {
     color: #000;
-    font-size: 24px;
+    font-size: 12px;
 }
 
 .button10 {
-    width: 226px;
-    height: 94px;
+    width: 113px;
+    height: 47px;
     border: 2px solid #f1f2f3;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .button10 img {
-    width: 38px;
-    height: 38px;
+    width: 19px;
+    height: 19px;
 }
 
 .google {

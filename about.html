@@ -106,4 +106,14 @@
     </footer>
 </body>
 
+<script>
+    const nav = document.querySelector('nav');
+    const triggerMenu = document.querySelector('.trigger-menu');
+
+    triggerMenu.onclick = function () {
+        nav.classList.toggle('active');
+        triggerMenu.classList.toggle('active');
+    }
+</script>
+
 </html>
