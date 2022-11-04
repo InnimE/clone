@@ -2,20 +2,50 @@
 
 /* common.css */
 
-html,body{ margin:0; }
-*{
+html,
+body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding:0;
+}
+
+* {
     font-family: "Apple SD Gothic Neo";
     box-sizing: border-box;
-    color:#626262;
+    color: #000;
 }
 
-ul,li{
+ul,
+li {
     list-style-type: none;
-    margin:0; padding:0;
+    margin: 0;
+    padding: 0;
 }
-h1,h2,h3,h4,h5,h6,p{ margin:0; }
-img{vertical-align: top;}
-a{text-decoration: none;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+}
 
 @import url(//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo);
-@font-face {font-family: "Apple SD Gothic Neo"; src: url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot"); src: url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff") format("woff"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.svg#Apple SD Gothic Neo") format("svg"); }
+
+@font-face {
+    font-family: "Apple SD Gothic Neo";
+    src: url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot");
+    src: url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff") format("woff"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.svg#Apple SD Gothic Neo") format("svg");
+}
